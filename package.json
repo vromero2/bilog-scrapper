@@ -1,0 +1,16 @@
+{
+  "name": "bilog-scraper",
+  "version": "1.0.0",
+  "description": "Scraper para extraer pacientes de Bilog",
+  "main": "scrap-patients.js",
+  "scripts": {
+    "start": "node scrap-patients.js",
+    "login-test": "node -e \"require('./login').login().then(() => console.log('Login OK')).catch(e => console.error(e))\""
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "exceljs": "^4.4.0",
+    "iconv-lite": "^0.6.3",
+    "puppeteer": "^21.6.0"
+  }
+}
